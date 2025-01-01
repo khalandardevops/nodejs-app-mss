@@ -22,7 +22,7 @@ stage('Bulid'){
 }
 
 stage('RunNodeJSApp'){   
-      sh 'pm2 start app.js'
+      sh 'pm2 stop app.js'
 }
 
 }
