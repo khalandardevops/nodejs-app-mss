@@ -5,7 +5,9 @@ pipeline{
   stages{
 
     stage('Checkout'){
-      git 'https://github.com/khalandardevops/nodejs-app-mss.git'
+      steps{
+        git 'https://github.com/khalandardevops/nodejs-app-mss.git'
+      }      
     }
 
   }
