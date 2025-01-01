@@ -1,0 +1,7 @@
+node{
+
+stage('checkout'){
+  git 'https://github.com/khalandardevops/nodejs-app-mss.git'
+}
+
+}
