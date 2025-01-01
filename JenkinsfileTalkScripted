@@ -5,7 +5,9 @@ stage('checkout'){
 }
 
 stage('Bulid'){
-  sh 'npm install'
+  nodejs('NodeJS23.5.0') {
+    sh 'npm install'
+  }
 }
 
 }
