@@ -10,4 +10,8 @@ stage('Bulid'){
   }
 }
 
+stage('RunNodeJSApp'){
+  sh 'npm start'
+}
+
 }
