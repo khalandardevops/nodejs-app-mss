@@ -9,6 +9,10 @@ pipeline{
         git 'https://github.com/khalandardevops/nodejs-app-mss.git'
       }      
     }
-
+    stage('Build'){
+      steps{
+        sh 'npm install'
+      }
+    }
   }
 }
