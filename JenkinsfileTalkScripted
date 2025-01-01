@@ -3,7 +3,7 @@ node{
 stage('checkout'){
   git 'https://github.com/khalandardevops/nodejs-app-mss.git'
 }
-
+/*
 stage('Bulid'){
   nodejs('NodeJS23.5.0') {
     sh 'npm install'
@@ -13,8 +13,16 @@ stage('Bulid'){
 stage('RunNodeJSApp'){
    nodejs(nodeJSInstallationName:'NodeJS23.5.0') {
       sh 'npm start'
-   }
-  
+   } 
+}
+*/
+
+stage('Bulid'){
+    sh 'npm install'
+}
+
+stage('RunNodeJSApp'){   
+      sh 'npm start'
 }
 
 }
