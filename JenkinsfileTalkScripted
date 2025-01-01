@@ -4,4 +4,8 @@ stage('checkout'){
   git 'https://github.com/khalandardevops/nodejs-app-mss.git'
 }
 
+stage('Bulid'){
+  sh 'npm install'
+}
+
 }
