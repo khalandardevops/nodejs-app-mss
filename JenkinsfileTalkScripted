@@ -11,7 +11,10 @@ stage('Bulid'){
 }
 
 stage('RunNodeJSApp'){
-  sh 'npm start'
+   nodejs(NodeJSInstallationName:'NodeJS23.5.0') {
+      sh 'npm start'
+   }
+  
 }
 
 }
