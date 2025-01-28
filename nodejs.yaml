@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
       - name: ttb
-        image: 277707131963.dkr.ecr.ap-south-1.amazonaws.com/ttbns/data-acc-api
+        image: 277707131963.dkr.ecr.ap-south-1.amazonaws.com/ttbns/data-acc-api:8
         resources:
           limits:
             memory: "128Mi"
