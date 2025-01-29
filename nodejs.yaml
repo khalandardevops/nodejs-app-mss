@@ -30,5 +30,5 @@ spec:
     app: ttb
   type: LoadBalancer
   ports:
-  - port: 8888
+  - port: 5555
     targetPort: 9981
